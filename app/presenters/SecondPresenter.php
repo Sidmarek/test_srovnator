@@ -52,7 +52,7 @@ class SecondPresenter extends BasePresenter {
         else {
             $section->hmotnost = $values->hmotnost;
         }
-        $this->flashMessage('Děkuji za vaše údaje '.$section->hmotnost.$section->objem_vozidla.' something', 'success');
+        $this->flashMessage('Děkuji za vaše údaje', 'success');
         $this->redirect('Overview:show');
     }
 }

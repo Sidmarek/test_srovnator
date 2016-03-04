@@ -13,13 +13,14 @@ list($_b, $_g, $_l) = $template->initialize('cbfc613512', 'html')
 //
 if (!function_exists($_b->blocks['content'][] = '_lbd75d675ffc_content')) { function _lbd75d675ffc_content($_b, $_args) { foreach ($_args as $__k => $__v) $$__k = $__v
 ?><p>Údaje:<br>
- <?php echo Latte\Runtime\Filters::escapeHtml($udaje->psc, ENT_NOQUOTES) ?><br>
- <?php echo Latte\Runtime\Filters::escapeHtml($udaje->email, ENT_NOQUOTES) ?><br>
- <?php echo Latte\Runtime\Filters::escapeHtml($udaje->vek, ENT_NOQUOTES) ?><br>
- <?php echo Latte\Runtime\Filters::escapeHtml($udaje->vozidlo, ENT_NOQUOTES) ?><br>
- <?php echo Latte\Runtime\Filters::escapeHtml($udaje->objem_vozidla, ENT_NOQUOTES) ?><br>
- <?php echo Latte\Runtime\Filters::escapeHtml($udaje->vykon_vozidla, ENT_NOQUOTES) ?><br>
- <?php echo Latte\Runtime\Filters::escapeHtml($udaje->hmotnost, ENT_NOQUOTES) ?><br>
+ Vaše PSČ: <?php echo Latte\Runtime\Filters::escapeHtml($udaje->psc, ENT_NOQUOTES) ?><br>
+ Váš e-mail: <?php echo Latte\Runtime\Filters::escapeHtml($udaje->email, ENT_NOQUOTES) ?><br>
+ Váš věk: <?php echo Latte\Runtime\Filters::escapeHtml($udaje->vek, ENT_NOQUOTES) ?><br>
+ Váš typ vozidla: <?php echo Latte\Runtime\Filters::escapeHtml($udaje->vozidlo, ENT_NOQUOTES) ?><br>
+ Objem vašeho vozidla:<?php echo Latte\Runtime\Filters::escapeHtml($udaje->objem_vozidla, ENT_NOQUOTES) ?><br>
+ Výkon vašeho vozidla: <?php echo Latte\Runtime\Filters::escapeHtml($udaje->vykon_vozidla, ENT_NOQUOTES) ?><br>
+ Hmotnost vašeho vozidla:<?php echo Latte\Runtime\Filters::escapeHtml($udaje->hmotnost, ENT_NOQUOTES) ?><br>
+ Cena vašeho pojisštení: <?php echo Latte\Runtime\Filters::escapeHtml($cena, ENT_NOQUOTES) ?><br>
  </p>
 <?php
 }}
