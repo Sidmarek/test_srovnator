@@ -10,7 +10,7 @@ class OverviewPresenter extends BasePresenter {
     }
     
     public function renderShow() { 
-      $this->session->start();
+        $this->session->start();
         $section = $this->getSession('udaje');//Získání údajů ze session
         $this->template->udaje = $section;
         
