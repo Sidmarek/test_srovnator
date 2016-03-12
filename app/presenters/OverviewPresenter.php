@@ -18,7 +18,7 @@ class OverviewPresenter extends BasePresenter {
         
         $cena = $pocatecni_cena;
         
-        if (strpos($section->psc, "1") === true) { // Podmínky pro slevy a příplatky dle psc, věku, atd...
+        if ($section->psc < 19999 && $section->psc >= 10000) { // Podmínky pro slevy a příplatky dle psc, věku, atd...
             $cena = $cena+($pocatecni_cena*0.1);
         }
         if ($section->vek < 26) {
